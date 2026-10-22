@@ -104,6 +104,11 @@ BLUETOOTH: Final[list[dict[str, bool | str | int | list[int]]]] = [
         "manufacturer_id": 1485,
     },
     {
+        "connectable": True,
+        "domain": "chiot",
+        "service_uuid": "6ca1a426-d2db-4403-85fc-aa9bec54e6a1",
+    },
+    {
         "domain": "dormakaba_dkey",
         "service_uuid": "e7a60000-6639-429f-94fd-86de8ea26897",
     },

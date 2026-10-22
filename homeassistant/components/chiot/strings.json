@@ -1,0 +1,106 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "[%key:common::config_flow::abort::already_configured_device%]",
+      "already_in_progress": "[%key:common::config_flow::abort::already_in_progress%]",
+      "auth_failed": "The device rejected the local token. Put the device back into provisioning mode and add it again.",
+      "cannot_connect": "[%key:common::config_flow::error::cannot_connect%]",
+      "device_changed": "The device identity changed between the two Bluetooth sessions.",
+      "device_not_found": "The device is no longer advertising.",
+      "device_save_failed": "The device could not save the Wi-Fi configuration.",
+      "invalid_discovery_info": "The advertised discovery information is invalid.",
+      "mtu_too_small": "The Bluetooth connection MTU is too small. Connect through a Bluetooth adapter or an ESPHome Bluetooth Proxy that supports a larger MTU.",
+      "no_connectable_adapter": "No connectable Bluetooth adapter is available.",
+      "no_devices_found": "[%key:common::config_flow::abort::no_devices_found%]",
+      "not_online": "The device did not come online. Check the Wi-Fi name and password, then put the device back into provisioning mode and try again.",
+      "not_provisionable": "The device is not in provisioning mode.",
+      "provision_required": "This device is already on the network but has no local token in Home Assistant. Put it into provisioning mode and add it over Bluetooth.",
+      "reprovision_successful": "The device was provisioned again and its local credentials were updated.",
+      "untrusted_device": "The device certificate could not be verified.",
+      "unsupported_version": "The device uses an unsupported protocol version.",
+      "unknown": "[%key:common::config_flow::error::unknown%]"
+    },
+    "error": {
+      "cannot_connect": "[%key:common::config_flow::error::cannot_connect%]",
+      "device_not_found": "The device is no longer advertising.",
+      "invalid_wifi": "The device rejected the Wi-Fi name or password.",
+      "unknown": "[%key:common::config_flow::error::unknown%]"
+    },
+    "flow_title": "{name}",
+    "progress": {
+      "provision": "Sending the Wi-Fi configuration to the device.",
+      "verify": "Verifying the device identity.",
+      "wait_online": "Waiting for the device to come online."
+    },
+    "step": {
+      "bluetooth_confirm": {
+        "description": "[%key:component::bluetooth::config::step::bluetooth_confirm::description%]"
+      },
+      "reprovision_confirm": {
+        "data": {
+          "confirm": "Provision the device again"
+        },
+        "description": "This device is already added. Provisioning it again replaces its local token and updates the address."
+      },
+      "user": {
+        "data": {
+          "address": "[%key:common::config_flow::data::device%]"
+        },
+        "description": "[%key:component::bluetooth::config::step::user::description%]"
+      },
+      "wifi": {
+        "data": {
+          "password": "Wi-Fi password",
+          "ssid": "Wi-Fi name"
+        },
+        "description": "Enter the Wi-Fi credentials for the device."
+      }
+    }
+  },
+  "entity": {
+    "button": {
+      "identify": {
+        "name": "Identify"
+      },
+      "reboot": {
+        "name": "Reboot"
+      }
+    },
+    "sensor": {
+      "energy_today": {
+        "name": "Energy today"
+      },
+      "rated_power": {
+        "name": "Rated power"
+      }
+    },
+    "switch": {
+      "daily_consumption_alarm": {
+        "name": "Daily consumption alarm"
+      },
+      "do_not_disturb": {
+        "name": "Do not disturb"
+      },
+      "overload_alarm": {
+        "name": "Overload alarm"
+      },
+      "power_outage_memory": {
+        "name": "Power outage memory"
+      }
+    }
+  },
+  "exceptions": {
+    "device_error": {
+      "message": "The device reported an error: {message}"
+    },
+    "device_rejected": {
+      "message": "The device rejected the request (code {code})"
+    },
+    "device_unavailable": {
+      "message": "The device is not connected"
+    },
+    "not_supported": {
+      "message": "The device does not support this action"
+    }
+  }
+}

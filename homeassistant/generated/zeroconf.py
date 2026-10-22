@@ -449,6 +449,11 @@ ZEROCONF = {
             "domain": "bond",
         },
     ],
+    "_chiot-wss._tcp.local.": [
+        {
+            "domain": "chiot",
+        },
+    ],
     "_companion-link._tcp.local.": [
         {
             "domain": "apple_tv",

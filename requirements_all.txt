@@ -806,6 +806,9 @@ chefiq-ble==1.1.1
 # homeassistant.components.chess_com
 chess-com-api==1.1.0
 
+# homeassistant.components.chiot
+chiot-homeassistant-client==0.1.0
+
 # homeassistant.components.chirpstack
 chirpstack-api==4.19.0
 
